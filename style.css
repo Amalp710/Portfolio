@@ -1,4 +1,4 @@
-/* GENERAL */
+
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -452,4 +452,65 @@ footer p {
 
 .a{
   border-radius: 2rem;
+}
+
+/* CERTIFICATES SECTION */
+
+#certificates {
+  position: relative;
+  padding-top: 4vh;
+  height: fit-content;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.certificates-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.certificate-card {
+  background: rgb(250, 250, 250);
+  border: rgb(163, 163, 163) 0.1rem solid;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+}
+
+.certificate-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.certificate-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.certificate-description {
+  font-size: 1rem;
+  color: rgb(85, 85, 85);
+}
+#certificates .btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  transition: all 300ms ease;
+  width: 8rem;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+#certificates .btn:hover {
+  background: rgb(53, 53, 53);
+  color: white;
 }
