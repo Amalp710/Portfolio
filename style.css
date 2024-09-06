@@ -1,5 +1,4 @@
 
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -19,7 +18,7 @@ p {
   color: rgb(85, 85, 85);
 }
 
-/* TRANSITION */
+
 
 a,
 .btn {
@@ -160,7 +159,7 @@ section {
   display: flex;
 }
 
-/* PROFILE SECTION */
+
 
 #profile {
   display: flex;
@@ -206,14 +205,13 @@ section {
   gap: 1rem;
 }
 
-/* ICONS */
+
 
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
-/* BUTTONS */
 
 .btn-container {
   display: flex;
@@ -261,7 +259,7 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
+
 
 #about {
   position: relative;
@@ -314,7 +312,7 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+
 
 #experience {
   position: relative;
@@ -353,7 +351,7 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
+
 
 #projects {
   position: relative;
@@ -380,7 +378,7 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* CONTACT */
+
 
 #contact {
   display: flex;
@@ -420,7 +418,7 @@ article .icon {
   height: 2.5rem;
 }
 
-/* FOOTER SECTION */
+
 
 footer {
   height: 26vh;
@@ -454,7 +452,7 @@ footer p {
   border-radius: 2rem;
 }
 
-/* CERTIFICATES SECTION */
+
 
 #certificates {
   position: relative;
@@ -513,4 +511,59 @@ footer p {
 #certificates .btn:hover {
   background: rgb(53, 53, 53);
   color: white;
+}
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.slider-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.project-card {
+  flex: 0 0 auto;
+  width: 250px;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-btn.left {
+  left: 0;
+}
+
+.slider-btn.right {
+  right: 0;
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none;
 }
