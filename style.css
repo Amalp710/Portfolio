@@ -1,4 +1,4 @@
-
+/* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -513,4 +513,60 @@ footer p {
 #certificates .btn:hover {
   background: rgb(53, 53, 53);
   color: white;
+}/* Slider Container */
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.slider-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.project-card {
+  flex: 0 0 auto;
+  width: 250px;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Slider Buttons */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-btn.left {
+  left: 0;
+}
+
+.slider-btn.right {
+  right: 0;
+}
+
+/* Hide scrollbar */
+.slider-container::-webkit-scrollbar {
+  display: none;
 }
