@@ -337,12 +337,20 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: space-evenly; ;
+}
+
+article div h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 article {
   display: flex;
-  width: 10rem;
+  min-width: 10rem; /* Set a minimum width */
+  flex-basis: 20%;
+  align-items: center;
   justify-content: space-around;
   gap: 0.5rem;
 }
