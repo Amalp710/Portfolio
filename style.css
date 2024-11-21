@@ -340,11 +340,6 @@ section {
   justify-content: space-evenly; ;
 }
 
-article div h3 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 
 .article-redux h3{
   gap: 0.5;
