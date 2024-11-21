@@ -346,6 +346,10 @@ article div h3 {
   text-overflow: ellipsis;
 }
 
+.article-redux h3{
+  gap: 0.5;
+}
+
 article {
   display: flex;
   min-width: 10rem; /* Set a minimum width */
