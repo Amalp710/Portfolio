@@ -337,22 +337,26 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-evenly; ;
+  justify-content: space-evenly;
 }
 
 
-.article-redux h3{
-  gap: 0.5;
+.article-container .article-redux {
+  flex-basis: 20%; /* Match the flex-basis for consistency */
+  text-align: center;
 }
 
 article {
   display: flex;
-  min-width: 10rem; /* Set a minimum width */
-  flex-basis: 20%;
+  flex-direction: column; /* Ensure text is stacked vertically */
   align-items: center;
-  justify-content: space-around;
+  justify-content: center; /* Align text and icon centrally */
   gap: 0.5rem;
+  min-width: 10rem;
+  flex-basis: 20%;
+  text-align: center; /* Align text inside the articles */
 }
+
 
 article .icon {
   cursor: default;
