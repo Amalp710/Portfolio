@@ -7,7 +7,8 @@
     flex-wrap: wrap;
   }
   #contact,
-  #projects {
+  #projects,
+  #certificates {
     height: fit-content;
   }
 }
@@ -99,5 +100,33 @@
   }
   .text-container {
     text-align: justify;
+  }
+}
+
+
+@media (max-width: 600px) {
+  /* Certificates Section */
+  .certificates-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;   /* Center align content */
+    padding: 20px;         /* Add padding for breathing room */
+  }
+
+  .certificates-section h2 {
+    font-size: 1.5rem; /* Adjust heading size */
+    margin-bottom: 10px;
+  }
+
+  .certificate-item {
+    width: 90%;        /* Make items take up most of the screen */
+    margin-bottom: 15px; /* Add spacing between items */
+    text-align: center; /* Center align text */
+  }
+
+  .certificate-item img {
+    max-width: 100%;    /* Ensure images are responsive */
+    height: auto;       /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners */
   }
 }
